@@ -969,10 +969,10 @@ function increaseRealtime() {
         return;
     gameData.realtime += 100.0 / updateSpeed;
     gameData.realtimeRun += 100.0 / updateSpeed;
-    gameData.rebirthOneTime += 1.0 / updateSpeed;
-    gameData.rebirthTwoTime += 1.0 / updateSpeed;
-    gameData.rebirthThreeTime += 1.0 / updateSpeed;
-    gameData.rebirthFourTime += 1.0 / updateSpeed;
+    gameData.rebirthOneTime += 100.0 / updateSpeed;
+    gameData.rebirthTwoTime += 100.0 / updateSpeed;
+    gameData.rebirthThreeTime += 100.0 / updateSpeed;
+    gameData.rebirthFourTime += 100.0 / updateSpeed;
 }
 
 function setTheme(index, reload=false) {
