@@ -93,7 +93,7 @@ var autoBuyEnabled = true
 
 const updateSpeed = 30
 const baseLifespan = 365 * 70
-const baseGameSpeed = 4000
+const baseGameSpeed = 400
 const heroIncomeMult = 2500000000000000000
 
 const permanentUnlocks = ["Quick task display", "Dark Matter", "Dark Matter Skills", "Challenges"]
@@ -967,8 +967,8 @@ function increaseDays() {
 function increaseRealtime() {
     if (!canSimulate())
         return;
-    gameData.realtime += 1.0 / updateSpeed;
-    gameData.realtimeRun += 1.0 / updateSpeed;
+    gameData.realtime += 100.0 / updateSpeed;
+    gameData.realtimeRun += 100.0 / updateSpeed;
     gameData.rebirthOneTime += 1.0 / updateSpeed;
     gameData.rebirthTwoTime += 1.0 / updateSpeed;
     gameData.rebirthThreeTime += 1.0 / updateSpeed;
